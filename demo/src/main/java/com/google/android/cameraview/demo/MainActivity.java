@@ -250,13 +250,14 @@ public class MainActivity extends AppCompatActivity implements
         @Override
         public void onPictureTaken(CameraView cameraView, final byte[] data) {
             Log.d(TAG, "onPictureTaken " + data.length);
+            Log.d(TAG, Environment.DIRECTORY_PICTURES);
             Toast.makeText(cameraView.getContext(), R.string.picture_taken, Toast.LENGTH_SHORT)
                     .show();
             getBackgroundHandler().post(new Runnable() {
                 @Override
                 public void run() {
                     File file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES),
-                            "picture.jpg");
+                            System.currentTimeMillis()+"sample.jpg");
                     OutputStream os = null;
                     try {
                         os = new FileOutputStream(file);

@@ -29,7 +29,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
-        android:background="@android:color/black"/>
+        android:background="@android:color/black"
+        app:flash="off"/>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
