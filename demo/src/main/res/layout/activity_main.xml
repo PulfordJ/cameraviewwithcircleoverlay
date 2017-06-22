@@ -20,7 +20,10 @@
     android:layout_height="match_parent"
     android:background="@color/primary"
     tools:context=".MainActivity">
-
+<FrameLayout
+    android:id="@+id/circledCamera"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <com.google.android.cameraview.CameraView
         android:id="@+id/camera"
         android:layout_width="match_parent"
@@ -31,6 +34,9 @@
         android:adjustViewBounds="true"
         android:background="@android:color/black"
         app:flash="off"/>
+
+
+</FrameLayout>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

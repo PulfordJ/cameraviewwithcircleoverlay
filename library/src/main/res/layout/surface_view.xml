@@ -12,12 +12,18 @@
     limitations under the License.
 -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
-
+<FrameLayout>
     <SurfaceView
         android:id="@+id/surface_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         />
-
+    <View android:id="@+id/trans_circle"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/transparent_circle"
+          android:layout_gravity="center"
+          android:alpha="0.5"/>
+</FrameLayout>
 </merge>
