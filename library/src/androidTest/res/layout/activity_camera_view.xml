@@ -14,17 +14,12 @@
 <FrameLayout android:id="@+id/container"
              xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
-             android:layout_height="wrap_content">
+             android:layout_height="match_parent">
 
     <com.google.android.cameraview.CameraView
         android:id="@+id/camera"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:keepScreenOn="true"/>
-    <View android:id="@+id/trans_circle"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:background="@drawable/transparent_circle"
-          android:layout_gravity="center"
-          android:alpha="0.5"/>
+
 </FrameLayout>
